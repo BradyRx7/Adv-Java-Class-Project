@@ -16,7 +16,7 @@ import edu.bradyreed.advancedjava.exception.BadArrayException;
 public class ArrayUtilsTest {
     // Total of 4 methods to test minValue, copyRange, lastIndexOf, and indexOf
     // First four tests are positive tests, next four are negative tests
-    
+
     //Begin Positive Tests
     @Test
     public void testMinValue() {
@@ -93,7 +93,7 @@ public class ArrayUtilsTest {
         
         result = ArrayUtils.minValue(testArray);
              
-    }
+}
     
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void testOutOfBoundsCopyRange(){
