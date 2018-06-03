@@ -36,7 +36,7 @@ public class ArrayUtilsTest {
         int[] testArray = {5,10,14,1,22,87,16,12,77,46,29,33,-9,17,87,77};
         int copyPosition = 5;
         int[] result = null;
-        int[] expectedResult = {87,16,12,77,46,29,33,-9,17};
+        int[] expectedResult = {87,16,12,77,46,29,33,-9,17,87,77};
         
         try {
             result = ArrayUtils.copyRange(testArray, copyPosition);
