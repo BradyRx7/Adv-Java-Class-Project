@@ -73,7 +73,7 @@ public class ArrayUtilsTest {
         int expectedResult = 15;
         
         try {
-        result = ArrayUtils.indexOf(testArray, searchValue);
+        result = ArrayUtils.lastIndexOf(testArray, searchValue);
         }
         catch (BadArrayException e) {
             fail("Bad Array exception thrown. Write better tests! lol");
