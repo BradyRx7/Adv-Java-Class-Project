@@ -11,8 +11,8 @@ import edu.bradyreed.advancedjava.exception.BadArrayException;
 
 public class ArrayUtils {
     
-    // Static method searches its parameter array to locate the minimum
-    // value, and returns it.
+    /** Static method searches its parameter array to locate the minimum
+     value, and returns it. */
     public static int minValue(int[] list) throws BadArrayException {
          
         if (list == null)
@@ -38,8 +38,10 @@ public class ArrayUtils {
         return lowest;           
     }
     
-    // Static method copies the specified range of elements from the parameter 
-    // array into a new array, and returns it.
+    /** 
+     * Static method copies the specified range of elements from the parameter 
+     * array into a new array, and returns it.
+     */
     public static int[] copyRange(int[] list, int startIndex) throws BadArrayException{
         if (list == null)
             throw new BadArrayException("Array is Null");
@@ -60,9 +62,11 @@ public class ArrayUtils {
         return copyList;
     }
     
-    // Static method searches its parameter array to locate the first 
-    // occurrence of the parameter searchValue, and returns its index position
-    // if found, or -1 if not found
+    /**
+     * Static method searches its parameter array to locate the first 
+     * occurrence of the parameter searchValue, and returns its index position
+     * if found, or -1 if not found
+    */
     public static int indexOf(int[] list, int searchValue) throws BadArrayException {
         if (list == null)
             throw new BadArrayException("Array is Null");
@@ -79,9 +83,10 @@ public class ArrayUtils {
         return -1;
     }
     
-    // Static method searches its parameter array to locate the last occurrence 
-    // of the parameter searchValue, and returns its index position if found,
-    // or -1 if not found
+    /** Static method searches its parameter array to locate the last occurrence 
+        of the parameter searchValue, and returns its index position if found,
+        or -1 if not found
+     */
     public static int lastIndexOf(int[] list, int searchValue) throws BadArrayException {
         if (list == null)
             throw new BadArrayException("Array is Null");
